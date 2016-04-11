@@ -11,5 +11,6 @@ PHP5.3.29をインストール後、
 
 ''
 Action php53-script /cgi-bin/php53.cgi
+
 AddHandler php53-script .php
 ''
