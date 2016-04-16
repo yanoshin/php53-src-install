@@ -1,6 +1,9 @@
 #!/bin/bash
 
-sudo yum install -y libxml2 libxml2-devel libjpeg libjpeg-devel libpng libpng-devel mysql-devel
+sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
+sudo yum install -y --skip-broken libxml2 libxml2-devel libjpeg libjpeg-devel libpng libpng-devel 
+# not require ? mysql-devel
 
 sudo mkdir /usr/local/mysql
 
