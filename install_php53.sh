@@ -26,6 +26,7 @@ cd php-5.3.29
 --enable-mbstr-enc-trans \
 --enable-track-vars --enable-mbregex \
 --with-mysql \
+--with-pdo-mysql \
 --with-zlib-dir=/usr/include/ \
 --with-gd \
 --with-curl \
