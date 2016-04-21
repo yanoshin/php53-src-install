@@ -2,7 +2,8 @@
 
 sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
-sudo yum install -y --skip-broken libxml2 libxml2-devel libjpeg libjpeg-devel libpng libpng-devel libcurl-devel
+sudo yum install -y --skip-broken libxml2 libxml2-devel libjpeg libjpeg-devel libpng libpng-devel libcurl-devel openssl-devel mysql-devel
+
 # not require ? mysql-devel
 
 sudo mkdir /usr/local/mysql
@@ -40,4 +41,7 @@ sudo make
 #sudo make test
 sudo make install
 
+
+# copy php-cgi53 into cgi-bin dir (not symbolic link, should copy it)
+sudo cp /usr/local/lib/php-5.3.29/bin/php-cgi53 /var/www/cgi-bin/php53.cgi
 
